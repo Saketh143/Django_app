@@ -148,3 +148,9 @@ EMAIL_HOST_PASSWORD = 'SakethPython@1431'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+try:
+    from .local_settings.py import *
+except ImportError:
+    pass
+
+
